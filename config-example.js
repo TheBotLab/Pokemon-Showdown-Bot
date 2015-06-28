@@ -4,8 +4,8 @@
 // If you really don't know how to do this... Run `node getserver.js URL`.
 // Fill in the URL of the client where `URL` is.
 // For example: `node getserver.js http://example-server.psim.us/`
-exports.server = 'sim.psim.us';
-exports.port = 8000;
+exports.server = 'lotus.kota.moe';
+exports.port = 80;
 
 // This is the server id.
 // To know this one, you should check where the AJAX call 'goes' to when you
@@ -13,16 +13,16 @@ exports.port = 8000;
 // For example, on the Smogon server, it will say somewhere in the URL
 // ~~showdown, meaning that the server id is 'showdown'.
 // If you really don't know how to check this... run the said script above.
-exports.serverid = 'showdown';
+exports.serverid = 'eos';
 
 // The nick and password to log in with
 // If no password is required, leave pass empty
-exports.nick = 'Example bot nick';
-exports.pass = '';
+exports.nick = 'The Bot Lab';
+exports.pass = 'aaaaaa';
 
 // The rooms that should be joined.
 // Joining Smogon's Showdown's Lobby is not allowed.
-exports.rooms = ['example room name', 'another example'];
+exports.rooms = ['the bot lab'];
 
 // Any private rooms that should be joined.
 // Private rooms will be moderated differently (since /warn doesn't work in them).
@@ -33,11 +33,11 @@ exports.privaterooms = [];
 // Note that using / and ! might be 'dangerous' since these are used in
 // Showdown itself.
 // Using only alphanumeric characters and spaces is not allowed.
-exports.commandcharacter = '.';
+exports.commandcharacter = '-';
 
 // The default rank is the minimum rank that can use a command in a room when
 // no rank is specified in settings.json
-exports.defaultrank = '%';
+exports.defaultrank = '+';
 
 // The server's usergroups, in order from lowest to highest priority.
 exports.groups = {
@@ -70,10 +70,10 @@ exports.debuglevel = 3;
 
 // Users who can use all commands regardless of their rank. Be very cautious
 // with this, especially on servers other than main.
-exports.excepts = [];
+exports.excepts = ['lustrousash'];
 
 // Whitelisted users are those who the bot will not enforce moderation for.
-exports.whitelist = [];
+exports.whitelist = ['lustrousash'];
 
 // Users in this list can use the regex autoban commands. Only add users who know how to write regular expressions and have your complete trust not to abuse the commands.
 exports.regexautobanwhitelist = [];
@@ -91,7 +91,7 @@ exports.fork = 'http://github.com/TalkTakesTime/Pokemon-Showdown-Bot';
 // exercise moderator discretion. In addition, it currently uses a very simple method of 
 // determining who to mute and so may miss people who should be muted, or mute those who 
 // shouldn't. Use with caution.
-exports.allowmute = false;
+exports.allowmute = true;
 
 // The punishment values system allows you to customise how you want the bot to deal with
 // rulebreakers. Spamming has a points value of 2, all caps has a points value of 1, etc.
